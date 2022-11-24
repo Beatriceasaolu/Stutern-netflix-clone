@@ -19,7 +19,7 @@ body {
   position: relative;
   /* z-index: 4; */
   /* filter: brightness(80%); */
-  background-image: url("/Images/netflix background.jpg");
+  background-image: url("Images/netflix background.jpg");
   /* box-shadow: inset 10px 10px 5px black, inset 30px -10px 5px black; */
 }
 .nav-content {
