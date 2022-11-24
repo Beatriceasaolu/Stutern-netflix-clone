@@ -95,7 +95,7 @@ nav img {
   justify-content: space-between;
 }
 .content img {
-  width: 100%;
+  width: 90%;
   display: grid;
   align-items: center;
 }
