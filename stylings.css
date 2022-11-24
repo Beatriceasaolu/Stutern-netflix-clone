@@ -16,7 +16,7 @@ body {
 
 /* For the nav bar area */
 .nav {
-  background-image: url("/Images/netflix\ background.jpg");
+  background-image: url("Images/netflix\ background.jpg");
   background-size: 100%;
   background-position: center;
   background-repeat: no-repeat;
