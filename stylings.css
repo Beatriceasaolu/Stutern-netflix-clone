@@ -130,19 +130,6 @@ nav img {
   left: 14%;
 }
 
-/* FOR THE DOWNLOAD SECTION OF THE FEATURES SECTION */
-/* .overlay {
-  padding: 20px 40px;
-  position: absolute;
-  z-index: 2;
-  background-color: red;
-}
-.a img {
-  position: relative;
-  z-index: -1;
-} */
-
-/* FOR THE FOOTER AND THE FAQ SECTION, GENERAL STYLE */
 .option,
 footer {
   background-color: black;
@@ -239,17 +226,7 @@ footer {
 }
 
 /* FOR THE SCROLL ANIMATION */
-.hide {
-  opacity: 0;
-  filter: blur(5px);
-  transform: translateX(-100%);
-  transition: all 2s;
-}
-.show {
-  opacity: 1;
-  filter: blur(0);
-  transform: translateX(0);
-}
+
 
 /* FOR MEDIA RESPONSIVENESS */
 @media screen and (width: 375px) {
