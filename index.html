@@ -15,6 +15,7 @@
       type="image/x-icon"
     />
     <link rel="stylesheet" href="stylings.css" />
+    <script defer src="style.js"></script>
   </head>
   <body>
     <!-- The nav bar section -->
@@ -24,8 +25,8 @@
           <img src="/Images/Netflix-Logo.wine.png" alt="netflix-logo" />
           <button>Sign In</button>
         </nav>
-        <div class="CTA">
-          <h1>Unlimited movies, Tv shows and more....</h1>
+        <div class="CTA hide show">
+          <h1>Unlimited movies, Tv shows and more ...</h1>
           <p>Watch anywhere, Cancel anytime.</p>
           <p>
             Ready to watch? Enter your email to create or restart your
@@ -49,7 +50,7 @@
     <!-- The option or Features section -->
     <section>
       <div class="options">
-        <div class="content">
+        <div class="content show hide">
           <div class="text">
             <h1>Enjoy on your TV.</h1>
             <p>
@@ -66,16 +67,30 @@
         </div>
       </div>
       <div class="options">
-        <div class="content reverse">
+        <div class="content reverse show hide">
           <div class="text">
             <h1>Download your shows to watch offline.</h1>
             <p>Save your favorite easily and always have something to watch</p>
           </div>
-          <img src="/Images/download show.jpg" alt="download your favorite" />
+          <div class="imbed">
+            <img src="/Images/download show.jpg" alt="tv" />
+            <video autoplay="" loop="" width="200" poster="/Images/tv.png">
+              <source src="/Images/video-tv-0819.mp4" type="video/mp4" />
+            </video>
+          </div>
         </div>
       </div>
       <div class="options">
-        <div class="content">
+        <div class="content show hide">
+          <div class="text">
+            <h1>Download your shows to watch offline.</h1>
+            <p>Save your favorite easily and always have something to watch</p>
+          </div>
+          <div style="width: 50%"></div>
+        </div>
+      </div>
+      <div class="options">
+        <div class="content reverse show hide">
           <div class="text">
             <h1>Create profile for kids</h1>
             <p>
@@ -83,47 +98,54 @@
               made just for them - free with your membership.
             </p>
           </div>
-          <img src="/Images/for kids.png" alt="for kids" />
+          <div>
+            <img src="/Images/for kids.png" alt="for kids" />
+          </div>
         </div>
       </div>
     </section>
     <!-- The FAQ section -->
     <section>
-      <div class="FAQ option">
+      <div class="FAQ option show hide">
         <div class="faq">
           <h1>Frequently Asked Questions</h1>
-          <div class="questions">
-            <div>
+          <div class="questions show hide">
+            <div class="hide">
               What is Netflix?
               <div>&plus;</div>
             </div>
-            <div>
+            <div class="hide">
               How much does Netflix cost?
               <div>&plus;</div>
             </div>
-            <div>
+            <div class="hide">
               Where can i watch
               <div>&plus;</div>
             </div>
-            <div>
+            <div class="hide">
               How do i cancel?
               <div>&plus;</div>
             </div>
-            <div>
+            <div class="hide">
               What can i watch on Netflix?
               <div>&plus;</div>
             </div>
-            <div>
+            <div class="hide">
               is Netflix good for kids?
               <div>&plus;</div>
             </div>
           </div>
-          <p>
+          <p class="show hide">
             Ready to watch? Enter your email to create or restart your
             membership.
           </p>
-          <div class="form">
-            <input type="email" name="email" id="email" />
+          <div class="form hide show">
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email Address"
+            />
             <button type="submit">
               Get Started
               <span class="material-symbols-outlined">chevron_right</span>
@@ -134,24 +156,24 @@
     </section>
     <!-- The footer section -->
     <footer>
-      <div class="option foot">
+      <div class="option foot show hide">
         <p>Questions? Contact us.</p>
         <div class="links">
-          <div>FAQ</div>
-          <div>Investor Relations</div>
-          <div>Privacy</div>
-          <div>Speed Test</div>
-          <div>Help center</div>
-          <div>Jobs</div>
-          <div>Cookies Preferences</div>
-          <div>Legal Notices</div>
-          <div>Account</div>
-          <div>Ways to Watch</div>
-          <div>Corporate Information</div>
-          <div>Only on Netflix</div>
-          <div>Media Center</div>
-          <div>Terms of Use</div>
-          <div>Contact us</div>
+          <div class="hide">FAQ</div>
+          <div class="hide">Investor Relations</div>
+          <div class="hide">Privacy</div>
+          <div class="hide">Speed Test</div>
+          <div class="hide">Help center</div>
+          <div class="hide">Jobs</div>
+          <div class="hide">Cookies Preferences</div>
+          <div class="hide">Legal Notices</div>
+          <div class="hide">Account</div>
+          <div class="hide">Ways to Watch</div>
+          <div class="hide">Corporate Information</div>
+          <div class="hide">Only on Netflix</div>
+          <div class="hide">Media Center</div>
+          <div class="hide">Terms of Use</div>
+          <div class="hide">Contact us</div>
         </div>
         <p>Netflix nigeria</p>
       </div>

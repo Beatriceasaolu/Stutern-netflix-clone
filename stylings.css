@@ -1,3 +1,4 @@
+/* General stylings */
 * {
   padding: 0;
   margin: 0;
@@ -12,6 +13,8 @@
 body {
   background: rgb(46, 45, 45);
 }
+
+/* For the nav bar area */
 .nav {
   background-image: url("/Images/netflix\ background.jpg");
   background-size: 100%;
@@ -19,17 +22,24 @@ body {
   background-repeat: no-repeat;
   height: 95vh;
   box-shadow: inset 150px 400px 250px 300px rgba(0, 0, 0, 0.767);
-  /* border-bottom: 120px solid black; */
 }
 nav {
   display: flex;
   justify-content: space-between;
   padding: 2% 4%;
 }
+nav button {
+  border: none;
+  padding: 5px 18px;
+  background-color: red;
+  border-radius: 5px;
+}
 nav img {
   width: 10%;
   object-fit: contain;
 }
+
+/* The word on the nav bar */
 .CTA {
   display: grid;
   justify-content: center;
@@ -39,12 +49,6 @@ nav img {
   width: 80%;
   align-content: center;
 }
-nav button {
-  border: none;
-  padding: 5px 18px;
-  background-color: red;
-  border-radius: 5px;
-}
 .CTA h1 {
   padding: 0px 10%;
   font-size: 40px;
@@ -53,6 +57,7 @@ nav button {
   line-height: 35px;
 }
 
+/* For the input and button on the nav bar */
 .CTA input,
 .form input {
   padding: 12px 20px;
@@ -61,14 +66,12 @@ nav button {
 }
 .CTA input {
   width: 100%;
+  color: white;
   background-color: rgba(0, 0, 0, 0.493);
 }
 .CTA input::placeholder,
 .form input::placeholder {
   color: rgba(255, 255, 255, 0.521);
-}
-.form {
-  display: flex;
 }
 .CTA button {
   margin: 0;
@@ -78,18 +81,21 @@ nav button {
   align-items: center;
   background-color: red;
 }
+.form {
+  display: flex;
+}
+
+/* FOR THE FEATURES SECTION */
 .options {
   background-color: black;
   color: white;
   margin-top: 10px;
   height: 40vh;
   display: flex;
-  /* gap: 50px; */
   justify-content: space-between;
-  /* padding: 30px 20px; */
 }
 .content img {
-  width: 30%;
+  width: 100%;
   display: grid;
   align-items: center;
 }
@@ -98,14 +104,45 @@ nav button {
   display: flex;
   justify-content: space-between;
   width: 70%;
-  gap: 42%;
+  gap: 30%;
   place-items: center;
   align-content: center;
 }
-
 .reverse {
   flex-direction: row-reverse;
 }
+.text p {
+  margin-top: 10px;
+}
+
+/* FOR THE TV SECTION OF THE FEATURES SECTION */
+.imbed {
+  position: relative;
+}
+.imbed img {
+  position: relative;
+  width: 105%;
+}
+.imbed video {
+  position: absolute;
+  width: 75%;
+  top: 22.1%;
+  left: 14%;
+}
+
+/* FOR THE DOWNLOAD SECTION OF THE FEATURES SECTION */
+/* .overlay {
+  padding: 20px 40px;
+  position: absolute;
+  z-index: 2;
+  background-color: red;
+}
+.a img {
+  position: relative;
+  z-index: -1;
+} */
+
+/* FOR THE FOOTER AND THE FAQ SECTION, GENERAL STYLE */
 .option,
 footer {
   background-color: black;
@@ -113,9 +150,7 @@ footer {
   margin-top: 10px;
 }
 
-.text p {
-  margin-top: 10px;
-}
+/* FOR THE FAQ SECTION */
 .faq {
   width: 90%;
   display: grid;
@@ -128,8 +163,10 @@ footer {
   outline: none;
   width: 100%;
   border: none;
-  /* background-color: rgba(73, 71, 71, 0.493); */
-  color: rgb(8, 8, 8);
+  background-color: rgba(105, 100, 100, 0.493);
+}
+.form input:-ms-input-placeholder {
+  color: rgb(218, 213, 213);
 }
 .form {
   margin-top: 5px;
@@ -150,15 +187,34 @@ footer {
   justify-content: space-between;
   margin-top: 5px;
   text-align: left;
-  background-color: rgba(49, 47, 47, 0.767);
+  background-color: rgba(105, 100, 100, 0.493);
 }
 .questions {
   margin: 40px 0px;
 }
+.questions > div:nth-child(2) {
+  transition-delay: 0.2s;
+}
+.questions > div:nth-child(3) {
+  transition-delay: 0.4s;
+}
+.questions > div:nth-child(4) {
+  transition-delay: 0.6s;
+}
+.questions > div:nth-child(5) {
+  transition-delay: 0.8s;
+}
+.questions > div:nth-child(6) {
+  transition-delay: 1s;
+}
+
+/* FOR THE FOOTER SECTION */
 .foot {
   list-style: none;
   margin: auto;
   padding: 60px 0px 30px 0px;
+  color: rgb(83, 79, 79);
+  font-size: 15px;
   width: 80%;
 }
 .links {
@@ -167,19 +223,37 @@ footer {
   width: 100%;
   flex: 60%;
 }
+
 .links div {
   padding: 10px;
+  color: rgba(105, 100, 100, 0.493);
+  font-size: 14px;
   width: 25%;
+}
+.foot p {
+  color: rgba(105, 100, 100, 0.493);
+  font-size: 14px;
 }
 .links {
   padding: 30px 0px;
 }
-.imbed img {
-  position: relative;
-  width: 105%;
+
+/* FOR THE SCROLL ANIMATION */
+.hide {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 2s;
 }
-.imbed video {
-  position: absolute;
-  top: 107%;
-  left: 68.5%;
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+/* FOR MEDIA RESPONSIVENESS */
+@media screen and (width: 375px) {
+  .content {
+    display: grid;
+  }
 }
